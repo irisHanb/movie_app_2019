@@ -1,0 +1,48 @@
+.movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 48%;
+  margin-top: 70px;
+  padding: 1.5em 1em 3em 1em;
+  border-radius: 0.3em;
+  background-color: #fff;
+  color: #868e96;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &__poster {
+    padding-right: 20px;
+    img {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: -40px;
+      max-width: 120px;
+    }
+  }
+
+  &__title {
+    color: #111;
+    font-size: 1.1rem;
+  }
+  &__year {
+    margin-top: 0.3em;
+  }
+
+  &__genres {
+    margin: 0.7em 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.7em;
+
+    .genre {
+      padding-right: 0.5em;
+      list-style: none;
+    }
+  }
+  &__summary {
+    line-height: 1.3;
+  }
+}
